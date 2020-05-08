@@ -23,20 +23,3 @@ log/
 *.iws
 *.iml
 *.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-
-### VS Code ###
-.vscode/
-
-### item ###
-*.yml
-src/main/resources/lib/ 
-src/main/resources/src/ 
-

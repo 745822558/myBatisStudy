@@ -12,10 +12,14 @@
             <!--数据连接池 POOLED是相当于默认mybatis的连接池-->
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/mybatis_study?useSSL=true&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis_study?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
                 <property name="username" value="root"/>
                 <property name="password" value="root"/>
             </dataSource>
         </environment>
     </environments>
+    <mappers>
+        <mapper resource="mapper/UserMapper.xml"/>
+        <package name="mapper"/>
+    </mappers>
 </configuration>
